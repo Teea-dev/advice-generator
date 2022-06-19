@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Mobiledivider from "./images/Mobiledivider.svg";
 import Desktopdivider from "./images/Desktopdivider.svg";
 import Dicey from "./images/Dicey.svg";
 import  axios  from "axios";
@@ -26,14 +26,18 @@ const randomAdvice = (event) =>{
 
 
   return (
-    <div className="App">
-      <h4 className='advice-id'> ADVICE #{num} </h4>
-      <h3 className='advice'>
-          
-          {advice}
-      </h3>
-      <img src={Desktopdivider} />
-      <img className="dice" onClick={randomAdvice} src={Dicey} />
+    <div className="App d-block container">
+      <h4 className="advice-id"> ADVICE #{num} </h4>
+      <h3 className="advice">{advice}</h3>
+      <div className="d-block d-md-none">
+        <img  src={Mobiledivider} />
+      </div>
+      <div className="d-none d-md-block">
+        <img src={Desktopdivider} />
+      </div>
+      <div className="dice btn mt-2">
+        <img onClick={randomAdvice} src={Dicey} />
+      </div>
     </div>
   );
 }

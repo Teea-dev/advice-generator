@@ -1,18 +1,39 @@
 .App {
   text-align: center;
   background:  hsl(217, 19%, 24%);
-  margin: 170px;
-  padding: 30px 20px 30px 20px;
-  border-radius: 15px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  max-width: 960px ;
+  border-radius: 15px; 
+  /* margin: 170px;*/
 }
 .advice{
   color: hsl(193, 38%, 86%);
 }
 .advice-id{
-color: hsl(150, 100%, 66%);
+  color: hsl(150, 100%, 66%);
 }
 .dice{
   color: hsl(193, 38%, 86%);
+  background: hsl(150, 100%, 66%);
+  border: 1px solid white ;
+  
+}
+.dice :hover{
+  cursor: pointer;
+}
+@media (max-width:900px) {
+     .App{
+    text-align: center;
+    background:  hsl(217, 19%, 24%);
+    margin-bottom: 0;
+    border-radius: 15px;
+     }
+     .dice{
+  color: hsl(193, 38%, 86%);
+  background: hsl(150, 100%, 66%);
+  
+}
 }
 
 
