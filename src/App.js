@@ -30,13 +30,13 @@ const randomAdvice = (event) =>{
       <h4 className="advice-id"> ADVICE #{num} </h4>
       <h3 className="advice">{advice}</h3>
       <div className="d-block d-md-none">
-        <img  src={Mobiledivider} />
+        <img  src={Mobiledivider} alt="" />
       </div>
       <div className="d-none d-md-block">
-        <img src={Desktopdivider} />
+        <img src={Desktopdivider}  alt=""/>
       </div>
       <div className="dice btn mt-2">
-        <img onClick={randomAdvice} src={Dicey} />
+        <img onClick={randomAdvice} src={Dicey} alt="" />
       </div>
     </div>
   );
