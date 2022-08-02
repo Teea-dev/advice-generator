@@ -16,11 +16,17 @@
 .dice{
   color: hsl(193, 38%, 86%);
   background: hsl(150, 100%, 66%);
-  border: 1px solid white ;
+  border: 1px solid  ;
+  border-radius: 50%;
   
 }
 .dice :hover{
   cursor: pointer;
+  
+}
+.mobile{
+  display:block;
+  margin: 0 auto;
 }
 @media (max-width:900px) {
      .App{

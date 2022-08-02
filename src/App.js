@@ -29,8 +29,8 @@ const randomAdvice = (event) =>{
     <div className="App d-block container">
       <h4 className="advice-id"> ADVICE #{num} </h4>
       <h3 className="advice">{advice}</h3>
-      <div className="d-block d-md-none">
-        <img  src={Mobiledivider} alt="" />
+      <div className=" d-block d-md-none">
+        <img className='mobile' src={Mobiledivider} alt="" />
       </div>
       <div className="d-none d-md-block">
         <img src={Desktopdivider}  alt=""/>
