@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Mobiledivider from "./images/Mobiledivider.svg";
 import Desktopdivider from "./images/Desktopdivider.svg";
-import Dicey from "./images/Dicey.svg";
+import Dicey from "./images/Dicey.svg"; 
 import  axios  from "axios";
 import './App.css';
 
@@ -56,7 +56,7 @@ if (data.ready){
       <div className="d-none d-md-block">
         <img src={Desktopdivider}  alt=""/>
       </div>
-      <div className="dice btn mt-2">
+      <div className="dice btn mt-2 rounded-circle">
         <img onClick={randomAdvice} src={Dicey} alt="" />
       </div>
     </div>

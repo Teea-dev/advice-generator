@@ -17,7 +17,8 @@
   color: hsl(193, 38%, 86%);
   background: hsl(150, 100%, 66%);
   border: 1px solid  ;
-  border-radius: 50%;
+  position: relative;
+  top: 50px;
   
 }
 .dice :hover{
